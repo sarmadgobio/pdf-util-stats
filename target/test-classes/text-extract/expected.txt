@@ -1,0 +1,71 @@
+Mobile Cardiac Outpatient Telemetry (MCOT)
+12/1/2017 8 Report(s) of 365Daily Patient ReportReport ID: 20878121
+(TEL) 866-426-4401 (FAX) 866-426-4403
+Patient Name: Move Smart
+Date of Birth: 12/12/1999 Gender: F
+Patient Phone: (234)234-2344
+Patient ID:
+Medical Record:
+Enrollment: 11/7/2017 - 6/30/2018
+Notification Physician: Benjamin Doe, MD
+San Diego Naval Medical Hospital
+Cardiology Department
+34800 Bob Wilson Drive BLDG.3
+San Diego, CA 92134
+Ordering Physician: Benjamin Doe, MD
+Diagnosis (ICD9): 272.4 Hyperlipidemia NEC/NOS
+Heart Rate Trend Chart
+AF
+Please see end of report for detailed explanation.
+Daily AF Burden Duration and Number of AF Episodes
+* Any AF episode continuing from prior day will be counted as a new episode for the day of the report. Durations of AF
+episodes will be calculated from midnight to midnight, the day of the report.  Short episodes < 30 seconds may be missed
+based on irregularity, artifact and/or length of event. If artifact occurs during an episode of AF, the episode will be counted as a
+single continuous episode.
+Smart, Move 12/1/2017 CardioNet Daily Report Page 1 of  3
+Copyright ©2002-2017 BioTelemetry, Inc. All Rights Reserved.
+Smart, Move 12/1/2017 CardioNet Daily Report
+Daily Heart Rate AF Heart Rates/Onsets
+* An episode of AF continuing from prior day will not be counted as a new onset. All new onsets are counted only if the
+patient is no longer in AF and returns to AF. If artifact occurs during an episode of AF, the episode will be considered as a
+continuous episode of AF.
+Heart Rate Only while Patient in Atrial Fibrillation
+AF Burden Summary
+Total Time Monitored
+Highest Heart Rate In AF
+Number of AF Episodes
+Lowest Heart Rate In AF
+Average Heart Rate Not in AF
+10 hours 50 minutes
+Time in Atrial Fibrillation 10 hours 50 minutes ( >99% )
+70 bpm at 00:00 PST
+2
+61 bpm at 00:00 PST
+64 bpm
+Total Analyzed Time 10 hours 50 minutes
+Average Heart Rate In AF 66 bpm
+Longest AF Episode
+Rates When Not In AF
+10 hours 12 minutes starting at 00:00 PST
+71 bpm at 10:12 PST
+Lowest Heart Rate Not in AF
+Highest Heart Rate Not in AF
+64 bpm at 10:12 PST
+Rates When In AF
+Smart, Move 12/1/2017 CardioNet Daily Report Page 2 of  3
+Copyright ©2002-2017 BioTelemetry, Inc. All Rights Reserved.
+Smart, Move 12/1/2017 CardioNet Daily Report
+Automatic Event Strip ID 24516446712/01/2017 10:12:38 PST
+Atrial Fibrillation
+Activities:  None Indicated
+Symptoms:  Automatic Event
+Preliminary Findings HR 72 bpm
+Physician Interpretation
+Interpreting Physician
+Signature Date
+AF Atrial Fibrillation: 1) Events lasting less than or equal to 10 minutes are graphed as 10 minute segments. 2) Atrial Fibrillation episodes are
+detected with an algorithm that uses RR interval variability with P-wave detection and requires approximately 30 seconds to determine
+periods of AF. It does not directly measure atrial activity. Atrial flutter or fibrillation that does not produce RR variability may not be
+detected.
+Smart, Move 12/1/2017 CardioNet Daily Report Page 3 of  3
+Copyright ©2002-2017 BioTelemetry, Inc. All Rights Reserved.

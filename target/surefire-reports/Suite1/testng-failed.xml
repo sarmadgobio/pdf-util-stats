@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT" verbose="0">
+  <test name="Nopackage(failed)">
+    <classes>
+      <class name="com.testautomationguru.utility.PDFUtilTest">
+        <methods>
+          <include name="comparePDFImageModeDiffSpecificPage"/>
+          <include name="comparePDFImageModeDiff"/>
+          <include name="checkForFileContentUsingDiff"/>
+        </methods>
+      </class> <!-- com.testautomationguru.utility.PDFUtilTest -->
+    </classes>
+  </test> <!-- Nopackage(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite1" class="navigator-link">
+              <span class="suite-name border-failed">Suite1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite1" class="navigator-link ">
+                    <span>C:\pdf-util-master\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite1" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite1" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite1" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite1" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite1" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite1" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 3 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testautomationguru.utility.PDFUtilTest" class="method navigator-link" hash-for-method="checkForFileContentUsingDiff">checkForFileContentUsingDiff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testautomationguru.utility.PDFUtilTest" class="method navigator-link" hash-for-method="comparePDFImageModeDiff">comparePDFImageModeDiff</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testautomationguru.utility.PDFUtilTest" class="method navigator-link" hash-for-method="comparePDFImageModeDiffSpecificPage">comparePDFImageModeDiffSpecificPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods passed suite-Suite1"> (hide)</a> <!-- hide-methods passed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testautomationguru.utility.PDFUtilTest" class="method navigator-link" hash-for-method="checkForFileContent">checkForFileContent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testautomationguru.utility.PDFUtilTest" class="method navigator-link" hash-for-method="checkForPDFPageCount">checkForPDFPageCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testautomationguru.utility.PDFUtilTest" class="method navigator-link" hash-for-method="comparePDFImageModeSame">comparePDFImageModeSame</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.testautomationguru.utility.PDFUtilTest" class="method navigator-link" hash-for-method="comparePDFImageModeSameSpecificPage">comparePDFImageModeSameSpecificPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testautomationguru.utility.PDFUtilTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkForFileContentUsingDiff">
+                  </a> <!-- checkForFileContentUsingDiff -->
+                  <span class="method-name">checkForFileContentUsingDiff</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Item Authoring Tool PDF Tables The PDF engine supports tables in all areas of a printed test (questions, responses, passages, answers, other tables, etc.). The supported functionality is as close to HTML tables as possible, but there are restrictions due to limitations in the PDF library that will be discussed below. Tables may be created within the WYSIWYG (what you see is what you get) editors in the application in �normal� mode, or as direct HTML (table, tr, and td tags) in the editors� �html� mode. (HTML tutorial: http://www.w3schools.com/html/html_tables.asp) When creating a table for PDF presentation, it should be kept in mind that the container area in the PDF document will likely be much smaller than that available in the HTML editor or in online testing. For example, the width of a question in two column format is limited to about 220 pixels. If possible, tables should be constructed with an iterative process of setting properties/attributes and PDF previewing to see the results. Adding/Editing a Table To add a table, click the icon on your WYSIWG editor. To view the Table Properties, right click inside one of the cells of your table. This will produce the Table Menu. Click the Edit Table option from the menu. � 2005. Vantage. All Rights Reserved. Table Properties To view/edit the Table Properties, click the Table tab. Table Tab Supported Table Properties/Attributes (PDF specific attributes take precedence) Property Attribute Values Description Name Name(s) Table Width width percentage Specifies the percentage of (ex. 50%) available space that the width of the table will occupy. For Default: 100% example, if we include a table in question content and specify a PDF Width of �50%�, that table will take up half of the width of the question area. Border Size border, pixels (ex. 120) Specifies the width of the borderwidth table/cell border in pixels. Default: 1 Horizontal align �left�, �center�, Specifies the horizontal alignment Alignment �right� of the table. Has no effect unless the table has a width less than Default: �center� 100% � 2005. Vantage. All Rights Reserved. PDF pdfalign �left�, �center�, Specifies the horizontal alignment Horizontal �right� of the table when printed to PDF. Alignment Has no effect unless the table has Default: �center� a width less than 100% Table cellpadding pixels (ex. 4) Specifies the padding in pixels Padding (left, right, top, and bottom) to be Default: 2 used in the cells of the table. Padding is the space between the border of a cell and its contents. Note: PDF tables have a minimum top padding of 3 and a minimum bottom padding of 4 for proper presentation. n/a pdfspacingbefore pixels (ex. 5) Specifies the space between the table and preceding elements Default: 2 (another table, text, etc). n/a pdfspacingafter pixels (ex. 5) Specifies the space between the table and trailing elements Default: 0 (another table, text, etc). Table Row Properties Clicking the Row tab of the Table Properties will allow you to view/edit the properties of the row. Row Tab � 2005. Vantage. All Rights Reserved. Supported Row Properties/Attributes (PDF specific attributes take precedence) Property Attribute Values Description Name Name(s) Vertical valign �top�, �middle�, Specifies the vertical alignment of Alignment �bottom� content for cells within the row. Default: �middle� Horizontal align, �top�, �middle�, Specifies the horizontal alignment Alignment alignment, �bottom� of content for cells within the halign row. Default: �left� Table Cell Properties Clicking the Cell tab of the Table Properties interface will allow you to view/edit the properties of the cell. Cell Tab � 2005. Vantage. All Rights Reserved. Supported Cell Properties/Attributes (PDF specific attributes take precedence) Property Attribute Values Description Name Name(s) colspan integer (ex. 2) Specifies the column span of the cell. This is the number of columns that the cell will represent. For example, in a table with three columns, you might specify that the first cell of the first row spans all three columns (colspan=3). This will result in a �header� cell/row that will cover the entire width of the table. Cell Width width percentage Specifies the desired width of the (ex. 50%) cell as a percentage of overall table width. For example, a cell with width = 50% will encompass half the available horizontal space in a table. If more than one cell in a column is given a width setting, the maximum value will be used as all cells in a column must be the same width. Cells without specified widths will share equally the remaining available horizontal space of the table. If combined cell widths total more than 100 percent, all cells will be downsized proportionally so that their total widths equal 100 percent. Note that unlike HTML tables, a PDF table cell�s width will not be sized by default to contain its contents. It�s up to the user to size cells/columns appropriately. PDF Cell pdfcellwidth percentage See Cell Width. Width (ex. 50%) � 2005. Vantage. All Rights Reserved. Cell Height height pixels (ex. 120) Specifies the desired minimum height of the cell in pixels. All cells in the row will share this height. If more than one height of a cell in a row is set, the maximum value will be used. If no heights are specified, the cell will be sized to fit its contents. PDF Cell pdfcellheight pixels (ex. 120) See Cell Height Height n/a cellpadding pixels (ex. 2) Specifies the padding in pixels (left, right, top, and bottom) to be Default: 2 used in this cell. Padding is the space between the border of a cell and its contents. Note: PDF tables have a minimum top padding of 3 and a minimum bottom padding of 4 for proper presentation. n/a pdfcellpadding pixels (ex. 2) See cellpadding. Default: 2 n/a border, pixels (ex. 1) Specifies the width of the cell borderwidth border in pixels. Default: 1 Vertical valign �top�, �middle�, Specifies the vertical alignment of Alignment �bottom� content within this cell. Default: �middle� Horizontal align, alignment, �top�, �middle�, Specifies the horizontal alignment Alignment halign �bottom� of content within this cell. Default: �left� � 2005. Vantage. All Rights Reserved. Recent changes pertaining to tables: 1. In the previous engine, there was no support for table formatting at all. Cell widths were distributed evenly, tables were all 100% width, and there were no settings. In this version, all of the options discussed above have been added. Known issues: 1. There is currently very limited support for absolute (pixel) widths for the overall table and the cells. This is generally because the pdf engine does not know the final width of the container of a table (especially in the case of nested tables) until the document is rendered. 2. Cells widths are not automatically sized according to the minimum width of their contents. 3. Images are not sized automatically to the constraints of a cell. 4. There is no support for cell spacing. � 2005. Vantage. All Rights Reserved.] but found [Item Authoring Tool PDF Tables The PDF engine supports tables in all areas of a printed test (questions, responses, passages, answers, other tables, etc.). The supported functionality is as close to HTML tables as possible, but there are restrictions due to limitations in the PDF library that will be discussed below. Tables may be created within the WYSIWYG (what you see is what you get) editors in the application in “normal” mode, or as direct HTML (table, tr, and td tags) in the editors’ “html” mode. (HTML tutorial: http://www.w3schools.com/html/html_tables.asp) When creating a table for PDF presentation, it should be kept in mind that the container area in the PDF document will likely be much smaller than that available in the HTML editor or in online testing. For example, the width of a question in two column format is limited to about 220 pixels. If possible, tables should be constructed with an iterative process of setting properties/attributes and PDF previewing to see the results. Adding/Editing a Table To add a table, click the icon on your WYSIWG editor. To view the Table Properties, right click inside one of the cells of your table. This will produce the Table Menu. Click the Edit Table option from the menu. © 2005. Vantage. All Rights Reserved. Table Properties To view/edit the Table Properties, click the Table tab. Table Tab Supported Table Properties/Attributes (PDF specific attributes take precedence) Property Attribute Values Description Name Name(s) Table Width width percentage Specifies the percentage of (ex. 50%) available space that the width of the table will occupy. For Default: 100% example, if we include a table in question content and specify a PDF Width of “50%”, that table will take up half of the width of the question area. Border Size border, pixels (ex. 120) Specifies the width of the borderwidth table/cell border in pixels. Default: 1 Horizontal align “left”, “center”, Specifies the horizontal alignment Alignment “right” of the table. Has no effect unless the table has a width less than Default: “center” 100% © 2005. Vantage. All Rights Reserved. PDF pdfalign “left”, “center”, Specifies the horizontal alignment Horizontal “right” of the table when printed to PDF. Alignment Has no effect unless the table has Default: “center” a width less than 100% Table cellpadding pixels (ex. 4) Specifies the padding in pixels Padding (left, right, top, and bottom) to be Default: 2 used in the cells of the table. Padding is the space between the border of a cell and its contents. Note: PDF tables have a minimum top padding of 3 and a minimum bottom padding of 4 for proper presentation. n/a pdfspacingbefore pixels (ex. 5) Specifies the space between the table and preceding elements Default: 2 (another table, text, etc). n/a pdfspacingafter pixels (ex. 5) Specifies the space between the table and trailing elements Default: 0 (another table, text, etc). Table Row Properties Clicking the Row tab of the Table Properties will allow you to view/edit the properties of the row. Row Tab © 2005. Vantage. All Rights Reserved. Supported Row Properties/Attributes (PDF specific attributes take precedence) Property Attribute Values Description Name Name(s) Vertical valign “top”, “middle”, Specifies the vertical alignment of Alignment “bottom” content for cells within the row. Default: “middle” Horizontal align, “top”, “middle”, Specifies the horizontal alignment Alignment alignment, “bottom” of content for cells within the halign row. Default: “left” Table Cell Properties Clicking the Cell tab of the Table Properties interface will allow you to view/edit the properties of the cell. Cell Tab © 2005. Vantage. All Rights Reserved. Supported Cell Properties/Attributes (PDF specific attributes take precedence) Property Attribute Values Description Name Name(s) colspan integer (ex. 2) Specifies the column span of the cell. This is the number of columns that the cell will represent. For example, in a table with three columns, you might specify that the first cell of the first row spans all three columns (colspan=3). This will result in a “header” cell/row that will cover the entire width of the table. Cell Width width percentage Specifies the desired width of the (ex. 50%) cell as a percentage of overall table width. For example, a cell with width = 50% will encompass half the available horizontal space in a table. If more than one cell in a column is given a width setting, the maximum value will be used as all cells in a column must be the same width. Cells without specified widths will share equally the remaining available horizontal space of the table. If combined cell widths total more than 100 percent, all cells will be downsized proportionally so that their total widths equal 100 percent. Note that unlike HTML tables, a PDF table cell’s width will not be sized by default to contain its contents. It’s up to the user to size cells/columns appropriately. PDF Cell pdfcellwidth percentage See Cell Width. Width (ex. 50%) © 2005. Vantage. All Rights Reserved. Cell Height height pixels (ex. 120) Specifies the desired minimum height of the cell in pixels. All cells in the row will share this height. If more than one height of a cell in a row is set, the maximum value will be used. If no heights are specified, the cell will be sized to fit its contents. PDF Cell pdfcellheight pixels (ex. 120) See Cell Height Height n/a cellpadding pixels (ex. 2) Specifies the padding in pixels (left, right, top, and bottom) to be Default: 2 used in this cell. Padding is the space between the border of a cell and its contents. Note: PDF tables have a minimum top padding of 3 and a minimum bottom padding of 4 for proper presentation. n/a pdfcellpadding pixels (ex. 2) See cellpadding. Default: 2 n/a border, pixels (ex. 1) Specifies the width of the cell borderwidth border in pixels. Default: 1 Vertical valign “top”, “middle”, Specifies the vertical alignment of Alignment “bottom” content within this cell. Default: “middle” Horizontal align, alignment, “top”, “middle”, Specifies the horizontal alignment Alignment halign “bottom” of content within this cell. Default: “left” © 2005. Vantage. All Rights Reserved. Recent changes pertaining to tables: 1. In the previous engine, there was no support for table formatting at all. Cell widths were distributed evenly, tables were all 100% width, and there were no settings. In this version, all of the options discussed above have been added. Known issues: 1. There is currently very limited support for absolute (pixel) widths for the overall table and the cells. This is generally because the pdf engine does not know the final width of the container of a table (especially in the case of nested tables) until the document is rendered. 2. Cells widths are not automatically sized according to the minimum width of their contents. 3. Images are not sized automatically to the constraints of a cell. 4. There is no support for cell spacing. © 2005. Vantage. All Rights Reserved.]
+	at com.testautomationguru.utility.PDFUtilTest.checkForFileContentUsingDiff(PDFUtilTest.java:44)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:974)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:824)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+... Removed 42 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="comparePDFImageModeDiff">
+                  </a> <!-- comparePDFImageModeDiff -->
+                  <span class="method-name">comparePDFImageModeDiff</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.testautomationguru.utility.PDFUtilTest.comparePDFImageModeDiff(PDFUtilTest.java:88)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:974)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:824)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="comparePDFImageModeDiffSpecificPage">
+                  </a> <!-- comparePDFImageModeDiffSpecificPage -->
+                  <span class="method-name">comparePDFImageModeDiffSpecificPage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.testautomationguru.utility.PDFUtilTest.comparePDFImageModeDiffSpecificPage(PDFUtilTest.java:106)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:82)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:974)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:824)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:722)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
+          <div class="suite-Suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testautomationguru.utility.PDFUtilTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkForFileContent">
+                  </a> <!-- checkForFileContent -->
+                  <span class="method-name">checkForFileContent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkForPDFPageCount">
+                  </a> <!-- checkForPDFPageCount -->
+                  <span class="method-name">checkForPDFPageCount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="comparePDFImageModeSame">
+                  </a> <!-- comparePDFImageModeSame -->
+                  <span class="method-name">comparePDFImageModeSame</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="comparePDFImageModeSameSpecificPage">
+                  </a> <!-- comparePDFImageModeSameSpecificPage -->
+                  <span class="method-name">comparePDFImageModeSameSpecificPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-passed -->
+        </div> <!-- panel Suite1 -->
+        <div panel-name="test-xml-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\pdf-util-master\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test name=&quot;Nopackage&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testautomationguru.utility.PDFUtilTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Nopackage --&gt;
+&lt;/suite&gt; &lt;!-- Suite1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Nopackage (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite1');
+function tableData_Suite1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkForFileContent')
+data.setCell(0, 2, 'com.testautomationguru.utility.PDFUtilTest')
+data.setCell(0, 3, 693);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkForFileContentUsingDiff')
+data.setCell(1, 2, 'com.testautomationguru.utility.PDFUtilTest')
+data.setCell(1, 3, 305);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'checkForPDFPageCount')
+data.setCell(2, 2, 'com.testautomationguru.utility.PDFUtilTest')
+data.setCell(2, 3, 160);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'comparePDFImageModeSameSpecificPage')
+data.setCell(3, 2, 'com.testautomationguru.utility.PDFUtilTest')
+data.setCell(3, 3, 9);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'comparePDFImageModeSame')
+data.setCell(4, 2, 'com.testautomationguru.utility.PDFUtilTest')
+data.setCell(4, 3, 8);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'comparePDFImageModeDiff')
+data.setCell(5, 2, 'com.testautomationguru.utility.PDFUtilTest')
+data.setCell(5, 3, 8);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'comparePDFImageModeDiffSpecificPage')
+data.setCell(6, 2, 'com.testautomationguru.utility.PDFUtilTest')
+data.setCell(6, 3, 7);
+window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-Suite1">
+              </div> <!-- times-div-Suite1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testautomationguru.utility.PDFUtilTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkForPDFPageCount</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkForFileContent</span>
+                <span class="method-start">164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">checkForFileContentUsingDiff</span>
+                <span class="method-start">858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">comparePDFImageModeDiff</span>
+                <span class="method-start">1164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">comparePDFImageModeSame</span>
+                <span class="method-start">1173 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">comparePDFImageModeDiffSpecificPage</span>
+                <span class="method-start">1182 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">comparePDFImageModeSameSpecificPage</span>
+                <span class="method-start">1190 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
